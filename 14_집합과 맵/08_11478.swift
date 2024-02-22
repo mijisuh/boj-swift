@@ -30,9 +30,9 @@ print(setArray.count)
 
  [Substring 타입]
  - Swift에서 문자열(String)에서 일부만 분리하여 사용하기 위해 부분 문자열을 만들 수 있다.
- let greeting = "Hello, world!"
- let index = greeting.firstIndex(of: ",") ?? greeting.endIndex
- let hello = greeting[..<index] // "Hello" 이고 Substring 타입
+     let greeting = "Hello, world!"
+     let index = greeting.firstIndex(of: ",") ?? greeting.endIndex
+     let hello = greeting[..<index] // "Hello" 이고 Substring 타입
  
  [String.Index]
  - Swift의 문자열(String)의 인덱스로 정수를 받지 않고 String.Index를 사용
