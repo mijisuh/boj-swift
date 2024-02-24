@@ -1,4 +1,4 @@
-// 방법 1) Set, Dictionary 이용
+// MARK: 방법 1) Set, Dictionary 이용
 // 1. 입력 배열을 이용해 중복이 없는 배열(Set) 생성
 // 2. 중복이 없는 배열을 정렬
 // 3. 중복이 없는 정렬된 배열 -> [값: 인덱스] 형태의 딕셔너리 타입으로 저장
@@ -21,7 +21,7 @@ if let _ = readLine() {
     }
 }
 
-// 방법 2) Dictionary 이용
+// MARK: 방법 2) Dictionary 이용
 // 1. 입력 배열을 정렬한 배열을 순회하면서 중복이 아닐 경우 딕셔너리 값을 증가시킴
 // 2. 오름차 순으로 값 증가되는 형태
 // 3. 입력 배열 순서대로 딕셔너리 출력
@@ -44,7 +44,7 @@ if let _ = readLine() {
             }
         }
 
-                // for문 없이 출력 시 시간이 1608 ms -> 984 ms 단축
-                // print(array.map { String(points[$0] ?? 0) }.joined(separator: " "))
+        // for문 없이 출력 시 시간이 1608 ms -> 984 ms 단축
+        // print(array.map { String(points[$0] ?? 0) }.joined(separator: " "))
     }
 }

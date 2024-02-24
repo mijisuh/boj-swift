@@ -1,4 +1,4 @@
-// 방법 1) 모든 경우의 수 고려
+// MARK: 방법 1) 모든 경우의 수 고려
 if let input = readLine() {
     if let n = Int(input), n != 1 {
         var temp = n
@@ -11,7 +11,7 @@ if let input = readLine() {
     }
 }
 
-// 방법 2) 연산 조건을 추가해서 시간 단축
+// MARK: 방법 2) 연산 조건을 추가해서 시간 단축
 if let input = readLine() {
     if let n = Int(input), n != 1 {
         var temp = n

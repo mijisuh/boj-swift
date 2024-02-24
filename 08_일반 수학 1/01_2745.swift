@@ -1,4 +1,4 @@
-// 방법 1) 일일히 계산
+// MARK: 방법 1) 일일히 계산
 if let input = readLine() {
     let inputArray = input.split { $0 == " " }
     let n = inputArray[0]
@@ -20,7 +20,7 @@ if let input = readLine() {
     }
 }
 
-// 방법 2) Int 생성자 이용
+// MARK: 방법 2) Int 생성자 이용
 if let input = readLine() {
     let inputArray = input.split { $0 == " " }
     let n = inputArray[0]

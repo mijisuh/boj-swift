@@ -1,4 +1,4 @@
-// 방법 1) for 문으로 부분 문자열 구함
+// MARK: 방법 1) for 문으로 부분 문자열 구함
 let s = readLine() ?? ""
 let array = s.map { String($0) }
 var setArray: Set<String> = [] // Set(모든 경우의 수)
@@ -13,7 +13,7 @@ for i in 0..<s.count {
 
 print(setArray.count)
 
-// 방법 2) Substring 타입 이용
+// MARK: 방법 2) Substring 타입 이용
 let s = readLine() ?? ""
 var setArray: Set<Substring> = []
 

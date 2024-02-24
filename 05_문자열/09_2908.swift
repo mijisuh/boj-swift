@@ -1,4 +1,4 @@
-// 방법 1) Int로 변환해서 비교
+// MARK: 방법 1) Int로 변환해서 비교
 if let input = readLine() {
     let inputArray = input.split { $0 == " " }
     let first = String(inputArray[0].reversed())
@@ -9,7 +9,7 @@ if let input = readLine() {
     }
 }
 
-// 방법 2) String 그대로 비교
+// MARK: 방법 2) String 그대로 비교
 if let input = readLine() {
     if let result = input.split { $0 == " " }.map { String($0.reversed()) }.max() {
         print(result)

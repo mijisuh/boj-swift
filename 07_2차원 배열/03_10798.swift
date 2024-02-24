@@ -1,4 +1,4 @@
-// 방법 1) 크기가 가장 큰 열을 구해서 사용
+// MARK: 방법 1) 크기가 가장 큰 열을 구해서 사용
 var array: [[Character]] = []
 
 while let input = readLine() {
@@ -18,7 +18,7 @@ for i in 0..<maxCount {
 
 print(result)
 
-// 방법 2) 미리 2차원 공간을 할당
+// MARK: 방법 2) 미리 2차원 공간을 할당
 var array = [[String]](repeating: [String](repeating: "", count: 15), count: 5)
 
 for i in 0..<5 {

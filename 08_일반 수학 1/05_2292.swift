@@ -1,4 +1,4 @@
-// 방법 1) 범위 경계선 중 앞의 수 기반으로 생각
+// MARK: 방법 1) 범위 경계선 중 앞의 수 기반으로 생각
 // 2 -> 8 -> 20 -> 38 -> ... -> 2 + 6 * (n-1)
 if let input = readLine() {
     if let n = Int(input) {
@@ -12,7 +12,7 @@ if let input = readLine() {
     }
 }
 
-// 방법 2) 범위 경계선 중 뒤의 수 기반으로 생각
+// MARK: 방법 2) 범위 경계선 중 뒤의 수 기반으로 생각
 // 7 -> 19 -> 37 -> ... 1 + 3 * n * (n + 1)
 if let input = readLine() {
     if let n = Int(input) {

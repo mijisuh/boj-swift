@@ -1,10 +1,10 @@
-// 방법 1) split 활용
+// MARK: 방법 1) split 활용
 if let input = readLine() {
     let count = input.split { $0 == " " }.count
     print(count)
 }
 
-// 방법 2) reduce 활용
+// MARK: 방법 2) reduce 활용
 if let input = readLine() {
     var count = input.reduce(0) { (result, element) in
         return element == " " ? result + 1 : result

@@ -1,4 +1,4 @@
-// 방법 1) 팩토리얼로 계산
+// MARK: 방법 1) 팩토리얼로 계산
 // Int 표현 가능 범위를 넘을 수 있기 때문에 Double로 캐스팅
 import Foundation
 func factorial(_ n: Double) -> Double {
@@ -13,7 +13,7 @@ while let input = readLine() {
     print(Int(round(factorial(m) / (factorial(n) * factorial(m - n)))))
 }
 
-// 방법 2) 조합 계산
+// MARK: 방법 2) 조합 계산
 func comb(_ n: Int, _ r: Int) -> Int {
     var result = 1
     for i in 1...r {

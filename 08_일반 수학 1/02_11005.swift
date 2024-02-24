@@ -1,4 +1,4 @@
-// 방법 1) 일일히 계산
+// MARK: 방법 1) 일일히 계산
 if let input = readLine() {
     let inputArray = input.split { $0 == " " }
     if let nInput = Int(inputArray[0]), let b = Int(inputArray[1]) {
@@ -24,7 +24,7 @@ if let input = readLine() {
     }
 }
 
-// 방법 2) String 생성자 이용
+// MARK: 방법 2) String 생성자 이용
 if let input = readLine() {
     let inputArray = input.split { $0 == " " }
     if let n = Int(inputArray[0]), let b = Int(inputArray[1]) {

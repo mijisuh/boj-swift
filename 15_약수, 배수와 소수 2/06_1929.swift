@@ -1,4 +1,4 @@
-// 방법 1) 범위 좁혀가면서 소수 판별
+// MARK: 방법 1) 범위 좁혀가면서 소수 판별
 func isPrime(_ num: Int) -> Bool {
     if num < 2 { return false }
     var i = 2
@@ -21,7 +21,7 @@ for num in m...n {
     }
 }
 
-// 방법 2) 에라토스테네스의 체 사용 -> 범위가 정해져 있을 때 사용
+// MARK: 방법 2) 에라토스테네스의 체 사용 -> 범위가 정해져 있을 때 사용
 // 시간: 352 ms(방법 1) -> 236 ms
 let inputArray = (readLine() ?? "").split { $0 == " " }.map { Int($0) ?? 0 }
 let m = inputArray[0], n = inputArray[1]

@@ -1,4 +1,4 @@
-// 방법 1) 곱하면서 찾기
+// MARK: 방법 1) 곱하면서 찾기
 if let _ = readLine() {
     while let input = readLine() {
         let inputArray = input.split { $0 == " " }.map { Int($0) ?? 0 }
@@ -20,7 +20,7 @@ if let _ = readLine() {
     }
 }
 
-// 방법 2) 최대공약수로 계산
+// MARK: 방법 2) 최대공약수로 계산
 func getGCD(_ a: Int, _ b: Int) -> Int {
     return a % b == 0 ? b : getGCD(b, a % b)
 }

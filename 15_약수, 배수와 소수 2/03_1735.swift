@@ -1,4 +1,4 @@
-// 방법 1) 분수의 합 그냥 구하기
+// MARK: 방법 1) 분수의 합 그냥 구하기
 func getGCD(_ a: Int, _ b: Int) -> Int {
     return a % b == 0 ? b : getGCD(b, a % b)
 }
@@ -13,7 +13,7 @@ let gcd = getGCD(sumA, sumB)
 
 print(sumA / gcd, sumB / gcd)
 
-// 방법 2) 분수의 합을 분모들의 최대공배수로 구하기
+// MARK: 방법 2) 분수의 합을 분모들의 최대공배수로 구하기
 func getGCD(_ a: Int, _ b: Int) -> Int {
     return a % b == 0 ? b : getGCD(b, a % b)
 }

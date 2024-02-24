@@ -1,4 +1,4 @@
-// 방법 1) Set만 사용 - 정렬할 때 배열의 크기를 count
+// MARK: 방법 1) Set만 사용 - 정렬할 때 배열의 크기를 count
 var words: Set<String> = []
 if let inputN = readLine() {
     if let n = Int(inputN) {
@@ -13,7 +13,7 @@ if let inputN = readLine() {
     }
 }
 
-// 방법 2) Set과 Tuple을 함께 사용 - 정렬하기 전에 배열의 크기를 저장
+// MARK: 방법 2) Set과 Tuple을 함께 사용 - 정렬하기 전에 배열의 크기를 저장
 // 시간: 480 ms(방법 1) -> 68 ms
 var words: Set<String> = []
 if let inputN = readLine() {

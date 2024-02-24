@@ -1,4 +1,4 @@
-// 방법 1) Array 활용
+// MARK: 방법 1) Array 활용
 var result = Array(1...30)
 for _ in 0..<28 {
     if let input = readLine() {
@@ -13,7 +13,7 @@ for i in 0..<30 {
     }
 }
 
-// 방법 2) Array 활용 + 메서드
+// MARK: 방법 2) Array 활용 + 메서드
 var result = Array(1...30)
 for _ in 0..<28 {
     if let input = readLine() {
@@ -31,7 +31,7 @@ for result in res.sorted() {
     print(result)
 }
 
-// 방법 3) Set 활용
+// MARK: 방법 3) Set 활용
 var arr: Set<Int> = Set(1 ... 30)
 
 while let input = readLine() {

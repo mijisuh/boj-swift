@@ -1,4 +1,4 @@
-// 방법 1) Set 활용
+// MARK: 방법 1) Set 활용
 func getTriangleInfo(_ a: Int, _ b: Int, _ c: Int) -> String {
     let length: Set<Int> = [a, b, c]
 
@@ -23,7 +23,7 @@ while let input = readLine() {
     }
 }
 
-// 방법 2) 각 변의 길이를 직접 비교
+// MARK: 방법 2) 각 변의 길이를 직접 비교
 func getTriangleInfo(_ a: Int, _ b: Int, _ c: Int) -> String {
     let max = [a, b, c].max() ?? 0
     let sum = a + b + c - max

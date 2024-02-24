@@ -1,4 +1,4 @@
-// 방법 1) 규칙..
+// MARK: 방법 1) 규칙..
 if let input = readLine() {
     if let n = Int(input) {
         var result = n
@@ -10,7 +10,7 @@ if let input = readLine() {
     }
 }
 
-// 방법 2)
+// MARK: 방법 2)
 if let input = readLine() {
     if let n = Int(input) {
         print(n * 4)

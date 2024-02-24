@@ -1,4 +1,3 @@
-
 while let input = readLine(), input != "-1" {
     var array: [Int] = []
     var sum = 0

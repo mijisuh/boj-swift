@@ -1,4 +1,4 @@
-// 방법 1) 그냥 sorted() 사용
+// MARK: 방법 1) 그냥 sorted() 사용
 var array: [Int] = []
 if let _ = readLine() {
     while let input = readLine() {
@@ -11,7 +11,7 @@ if let _ = readLine() {
     }
 }
 
-// 방법 2) 배열을 만들어서 배열의 인덱스를 정렬해야 하는 요소라고 생각
+// MARK: 방법 2) 배열을 만들어서 배열의 인덱스를 정렬해야 하는 요소라고 생각
 var nums = [Int](repeating: 0, count: 2000001)
 
 if let _ = readLine() {

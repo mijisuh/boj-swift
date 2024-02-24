@@ -1,4 +1,4 @@
-// 방법 1) 큐 활용
+// MARK: 방법 1) 큐 활용
 let inputs = (readLine() ?? "").split { $0 == " " }.map { Int($0) ?? 0 }
 let n = inputs[0], k = inputs[1]
 var queue = Array(1...n)
@@ -16,7 +16,7 @@ while result.count < n {
 
 print("<\(result.map { String($0) }.joined(separator: ", "))>")
 
-// 방법 2) index로 순회
+// MARK: 방법 2) index로 순회
 let inputs = (readLine() ?? "").split { $0 == " " }.map { Int($0) ?? 0 }
 let n = inputs[0], k = inputs[1]
 var queue = Array(1...n)

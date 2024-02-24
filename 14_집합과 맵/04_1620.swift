@@ -1,4 +1,4 @@
-// 방법 1) 딕셔너리 2개 사용
+// MARK: 방법 1) 딕셔너리 2개 사용
 let inputNM = (readLine() ?? "").split { $0 == " " }.map { Int($0) ?? 0 }
 let n = inputNM[0]
 let m = inputNM[1]
@@ -20,7 +20,7 @@ for _ in 0..<m {
     }
 }
 
-// 방법 2) 딕셔너리와 배열 사용
+// MARK: 방법 2) 딕셔너리와 배열 사용
 // 메모리: 92144 KB -> 87612 KB, 시간: 296 ms -> 264 ms
 let inputNM = (readLine() ?? "").split { $0 == " " }.map { Int($0) ?? 0 }
 let n = inputNM[0]

@@ -1,4 +1,4 @@
-// 방법 1) Tuple 정렬 시 우선순위 지정
+// MARK: 방법 1) Tuple 정렬 시 우선순위 지정
 var points: [(x: Int, y: Int)] = []
 
 if let inputN = readLine() {
@@ -18,7 +18,7 @@ if let inputN = readLine() {
     }
 }
 
-// 방법 2) Tuple 자동 정렬
+// MARK: 방법 2) Tuple 자동 정렬
 var points: [(x: Int, y: Int)] = []
 
 if let inputN = readLine() {

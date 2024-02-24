@@ -1,4 +1,4 @@
-// 방법 1) Array.reverse() 이용
+// MARK: 방법 1) Array.reverse() 이용
 if let nmInput = readLine() {
     let nmArray = nmInput.split { $0 == " " }.map { Int($0) }
     if let n = nmArray[0], let m = nmArray[1] {
@@ -17,7 +17,7 @@ if let nmInput = readLine() {
     }
 }
 
-// 방법 2) Array.swapAt() 이용
+// MARK: 방법 2) Array.swapAt() 이용
 if let nmInput = readLine() {
     let nmArray = nmInput.split { $0 == " " }.map { Int($0) }
     if let n = nmArray[0], let m = nmArray[1] {

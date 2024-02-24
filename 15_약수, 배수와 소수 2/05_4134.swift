@@ -1,4 +1,4 @@
-// 방법 1) sqrt() 이용
+// MARK: 방법 1) sqrt() 이용
 import Foundation
 
 func isPrime(_ num: Int) -> Bool {
@@ -18,7 +18,7 @@ while let input = Int(readLine() ?? "") {
     print(num)
 }
 
-// 방법 2) 제곱하면서 범위 줄여나감
+// MARK: 방법 2) 제곱하면서 범위 줄여나감
 func isPrime(_ num: Int) -> Bool {
     if num < 2 { return false }
     var i = 2

@@ -1,4 +1,4 @@
-// 방법 1) 완전 탐색
+// MARK: 방법 1) 완전 탐색
 if let input = readLine() {
     let inputArray = input.split { $0 == " " }.map { Int($0) ?? 0 }
     
@@ -12,7 +12,7 @@ if let input = readLine() {
     }
 }
 
-// 방법 2) 연립방정식 풀이
+// MARK: 방법 2) 연립방정식 풀이
 if let input = readLine() {
     let inputArray = input.split { $0 == " " }
     

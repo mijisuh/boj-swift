@@ -1,4 +1,4 @@
-// 방법 1) 범위 계산
+// MARK: 방법 1) 범위 계산
 if let input = readLine() {
     if let x = Int(input) {
         var row = 1 // 1 2 3 4
@@ -22,7 +22,7 @@ if let input = readLine() {
     }
 }
 
-// 방법 2) 등차수열을 잘 이용
+// MARK: 방법 2) 등차수열을 잘 이용
 if let input = readLine() {
     if let x = Int(input) {
         var remains = x
