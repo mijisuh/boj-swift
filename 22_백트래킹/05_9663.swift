@@ -1,3 +1,4 @@
+// 방법 1) 배열을 함수에 call by reference로 전달
 func isAvailable(_ candidate: [Int], _ currentCol: Int) -> Bool {
     let currentRow = candidate.count // 현재 행을 알 수 있음
 
@@ -35,3 +36,47 @@ func solveNQueen(_ n: Int) -> [[Int]] {
 
 let n = Int(readLine() ?? "") ?? 0
 print(solveNQueen(n).count)
+
+// 방법 2) 2차원 배열 2개로 풀이
+let n = Int(readLine() ?? "") ?? 0
+
+var board = [Int](repeating: -1, count: n) // 각 depth에서 퀸의 열 위치
+var visited = [Bool](repeating: false, count: n)
+var count = 0
+
+func isAvailable(_ depth: Int) -> Bool {
+    for i in 0..<depth { // 이전 depth의 퀸 위치와 비교
+        if board[i] == board[depth] { // 열 검사
+            return false
+        }
+
+        if abs(board[i] - board[depth]) == abs(i - depth) { // 대각선 검사
+            return false
+        }
+    }
+
+    return true
+}
+
+func dfs(_ depth: Int) {
+    print(visited)
+    print(board)
+    if depth == n {
+        count += 1
+        return
+    }
+
+    for i in 0..<n { // 열에서 퀸 위치: 0~(n-1)
+        if !visited[i] { // 해당 열이 false면 그 열 모두 방문할 필요 X
+            board[depth] = i
+            if isAvailable(depth) {
+                visited[i] = true
+                dfs(depth + 1)
+                visited[i] = false
+            }
+        }
+    }
+}
+
+dfs(0)
+print(count)
