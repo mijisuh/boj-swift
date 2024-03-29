@@ -3,7 +3,7 @@ let (n, m) = (nm[0], nm[1])
 let INF = n * (n - 1) * 10_000 + 1
 
 var dp = [[Int]](repeating: [Int](repeating: INF, count: n + 1), count: n + 1)
-// 싸이클이 있으면 시작 -> 시작이 0이 아닐 수도 있음
+// 사이클이 있으면 시작 -> 시작이 0이 아닐 수도 있음
 // for i in 1...n {
 //     dp[i][i] = 0
 // }
@@ -25,6 +25,6 @@ for k in 1...n {
 
 var answer = INF
 for i in 1...n {
-    answer = min(answer, dp[i][i]) // 싸이클: 시작 -> 시작
+    answer = min(answer, dp[i][i]) // 사이클: 시작 -> 시작
 }
 print(answer == INF ? -1 : answer)
