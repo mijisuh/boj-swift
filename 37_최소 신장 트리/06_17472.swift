@@ -57,8 +57,10 @@ func makeBridge(_ point: Point, _ number: Int, _ direction: Int, _ dist: Int) {
         let direction = queue[index].1
         let dist = queue[index].2
         
+        // 같은 섬에 속하는 경우
         if map[current.y][current.x] == number && dist > 1 { break }
         
+        // 2칸 이상 바다를 이동하고 다른 번호의 섬을 만나는 경우
         if map[current.y][current.x] > 0 && map[current.y][current.x] != number {
             if dist > 2 {
                 edges.append((number, map[current.y][current.x], dist - 1))
@@ -153,6 +155,7 @@ for y in 0..<n {
 }
 
 // 3. 최단 거리 간선의 합 구하기
+// 간선의 개수가 노드개수 - 1이 아니라면 연결된 것이 아님
 var parent = [Int](0...number)
 
 print(kruskal())
