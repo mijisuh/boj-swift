@@ -9,7 +9,8 @@ for i in 1..<n {
 
 print(times.reduce(0, +))
 
-// 방법 2) 그리디 알고리즘let n = Int(readLine() ?? "") ?? 0
+// 방법 2) 그리디 알고리즘
+let n = Int(readLine() ?? "") ?? 0
 var times = (readLine() ?? "").split { $0 == " " }.map { Int($0) ?? 0 }
 times.sort(by: <)
 
